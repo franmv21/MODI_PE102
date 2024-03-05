@@ -2,13 +2,13 @@
   "name": "modi-pr7",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "prueba.js",
   "scripts": {
     "coverage": "nyc npm test",
     "report": "nyc report --reporter=text-lcov | coveralls",
     "cleanup": "rm -rf .nyc_output",
     "test": "mocha",
-    "start": "tsc-watch --onSuccess \"node dist/ejercicio-1.js\"",
+    "start": "tsc-watch --onSuccess \"node dist/prueba.js\"",
     "doc": "typedoc && cp -r images docs/images"
   },
   "keywords": [],
