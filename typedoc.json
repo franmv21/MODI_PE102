@@ -1,0 +1,6 @@
+{
+    "entryPoints": [
+      "./src/modi-pr7/*.ts",
+    ],
+    "out": "./docs"
+}
