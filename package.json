@@ -4,8 +4,7 @@
   "description": "",
   "main": "prueba.js",
   "scripts": {
-    "coverage": "nyc npm test",
-    "report": "nyc report --reporter=lcov",
+    "coverage": "nyc npm test && nyc report --reporter=lcov",
     "test": "mocha",
     "start": "tsc-watch --onSuccess \"node dist/prueba.js\"",
     "doc": "typedoc && cp -r images docs/images"
