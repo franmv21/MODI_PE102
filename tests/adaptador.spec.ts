@@ -1,7 +1,7 @@
 import 'mocha';
 import { expect } from 'chai';
-import { Adapter, Complex } from '../src/modi-pr7/adaptador';
-import { Rational } from '../src/modi-pr7/adaptador';
+import { Adapter, Complex } from '../src/modi-pr7/adaptador.js';
+import { Rational } from '../src/modi-pr7/adaptador.js';
 
 describe('Adapter', () => {
     describe('constructor', () => {
