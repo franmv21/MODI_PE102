@@ -27,15 +27,19 @@ export class ClassObservable<T> implements Observable<T> {
     }
 
     subscribe(observer: Observer<T>): void {
-        if (!this.observers.includes(observer)) {
+        if (this.observers.includes(observer)) {
+            throw new Error('The observer had already been subscribed');
+          } else {
             this.observers.push(observer);
         }
     }
 
     unsubscribe(observer: Observer<T>): void {
         const index = this.observers.indexOf(observer);
-        if (index !== -1) {
-            this.observers.splice(index, 1);
+        if (index === -1) {
+          throw new Error('The observer has not been subscribed');
+        } else {
+          this.observers.splice(index, 1);
         }
     }
 
